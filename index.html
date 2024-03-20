@@ -15,7 +15,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="./scripts.js"></script>
   <meta name="theme-color" content="#712cf9">
   <style>
     .bd-placeholder-img {
@@ -193,16 +192,24 @@
           <ul class="collapse list-group" id="categoriesMenu">
             <li class="list-group-item border border-0">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="competitiveCheck">
-                <label class="form-check-label" for="competitiveCheck">
+                <input class="form-check-input ms-1" type="checkbox" value="" id="competitiveCheck">
+                <label class="form-check-label ps-2" for="competitiveCheck">
                   Competitivi
                 </label>
               </div>
             </li>
             <li class="list-group-item border border-0">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="cooperativeCheck">
-                <label class="form-check-label" for="cooperativeCheck">
+                <input class="form-check-input ms-1" type="checkbox" value="" id="cooperativeCheck">
+                <label class="form-check-label ps-2" for="cooperativeCheck">
+                  Cooperativi
+                </label>
+              </div>
+            </li>
+            <li class="list-group-item border border-0">
+              <div class="form-check">
+                <input class="form-check-input ms-1" type="checkbox" value="" id="cooperativeCheck">
+                <label class="form-check-label ps-2" for="cooperativeCheck">
                   Cooperativi
                 </label>
               </div>
@@ -212,6 +219,8 @@
       </ul>
     </div>
   </div>
+
+
   <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -221,41 +230,37 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-        </svg>
-        <div class="container">
+        <img src="./Pictures/carosello/carosello1.jpg" class="d-block w-100">
+        <div class="container-fluid" style="min-height: 0;">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <h1>"Non si smette di giocare quando si invecchia,
+              si invecchia quando si smette di giocare."</h1>
+            <p class="opacity-75">~ G.B. Shaw</p>
+            <!-- <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p> -->
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-        </svg>
-        <div class="container">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg> -->
+        <img src="./Pictures/carosello/carosello2.jpg" class="d-block w-100">
+        <div class="container-fluid">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <h1>"Si può scoprire di più su una persona in un'ora di gioco che in un anno di conversazione"</h1>
+            <p>~ Platone</p>
+            <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-        </svg>
-        <div class="container">
+        <img src="./Pictures/carosello/carosello3.jpg" height="100%" width="100%">
+        <div class="container-fluid">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <h1>"Me lo spieghi mentre giochiamo!"</h1>
+            <p>~ qualcuno che non vuole più essere invitato</p>
+            <!--<p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
           </div>
         </div>
       </div>
@@ -270,241 +275,1152 @@
     </button>
   </div>
 
-  <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-      <div class="col">
-        <div class="card shadow-sm" id="bitoku">
-          <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-          <img src="./Pictures/Suggested/Bitoku.webp"  class="rounded" width="100%" height="225">
+
+
+  <div class="container-fluid">
+    <div
+      class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-3 d-flex align-items-stretch ms-xxl-5 me-xxl-5"
+      id="wrapper">
+
+      <!--Bitoku-->
+      <div class="col" id="bitoku">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/Bitoku.webp" class="rounded-top" width="100%" height="225">
           <div class="card-body">
             <p class="card-text">Il Grande Spirito ha il compito di vegliare sulla foresta e donarle vita e prosperità
               ma il suo tempo in questo mondo sta per scadere e i Bitoku cercheranno di guadagnarsi il diritto alla
               successione</p>
           </div>
           <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
-            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill" style="min-width: 0;">
-              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span class="max-player-count">4</span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
             </span>
-            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"  style="min-width: 0;">
-              <i class="fa-solid fa-clock"></i><span class="playing-time">120'</span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">120</span>'
             </span>
-            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill" >
-              <a href="#" data-bs-toggle="modal" data-bs-target="#picturesModal" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('bitoku');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
                 <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
               </a>
             </span>
-            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill" style="min-width: 0;">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
               <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
             </span>
-            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"  style="min-width: 0;">
-              <i class="fa-solid fa-dice-four"></i><span class="players-interaction">4/5</span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-four"></i><span class="difficulty">4/5</span>
             </span>
-          </div>        
-        </div>
-      </div>
-      
-
-      <div class="col">
-        <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-              dy=".3em">Thumbnail</text>
-          </svg>
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
           </div>
         </div>
       </div>
-      <div class="col">
+      <!--Aeon's End-->
+      <div class="col" id="aeonsEnd">
         <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-              dy=".3em">Thumbnail</text>
-          </svg>
+          <img src="./Pictures/Suggested/AeonsEnd.jpeg" class="rounded-top" width="100%" height="225">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
+            <p class="card-text">Il mondo è finito. Quello che resta siamo noi: pochi sopravvissuti che cercano di
+              resistere con quel poco che rimane. Noi siamo Gravehold, una piccola città che cerca disperatamente di
+              farcela. </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">60</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('aeons');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-handshake"></i><span class="players-interaction">Coop</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-three"></i><span class="difficulty">3/5</span>
+            </span>
           </div>
         </div>
       </div>
-
-      <div class="col">
+      <!--Dojo Kun-->
+      <div class="col" id="dojoKun">
         <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-              dy=".3em">Thumbnail</text>
-          </svg>
+          <img src="./Pictures/Suggested/dojokun.jpg" class="rounded-top" width="100%" height="225">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
+            <p class="card-text">Espandi il tuo dojo, allena i tuoi atleti e competi nel torneo di arti marziali più
+              variegato del mondo.</p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">90</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('dojokun');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-three"></i><span class="difficulty">3/5</span>
+            </span>
           </div>
         </div>
       </div>
-      <div class="col">
+      <!--Spirit Island-->
+      <div class="col" id="spiritIsland">
         <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-              dy=".3em">Thumbnail</text>
-          </svg>
+          <img src="./Pictures/Suggested/spiritIsland.jpg" class="rounded-top" width="100%" height="225">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
+            <p class="card-text">Nei luoghi più remoti del mondo esiste ancora la magia, incarnata dagli spiriti della
+              natura. Le grandi potenze europee estendono i loro imperi coloniali sempre più in là, inevitabilmente
+              rivendicheranno un luogo in cui gli spiriti hanno ancora potere e quando lo faranno, la terra stessa si
+              opporrà.</p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">120</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('spiritisland');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-handshake"></i><span class="players-interaction">Coop</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-four"></i><span class="difficulty">4/5</span>
+            </span>
           </div>
         </div>
       </div>
-      <div class="col">
+      <!--Imhotep-->
+      <div class="col" id="imhotep">
         <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-              dy=".3em">Thumbnail</text>
-          </svg>
+          <img src="./Pictures/Suggested/imhotep.jpg" class="rounded-top" width="100%" height="225">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
+            <p class="card-text">I giocatori diventano costruttori dell'antico Egitto che vogliono emulare il primo e
+              più noto architetto del luogo, Imhotep.</p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">40</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('imhotep');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-two"></i><span class="difficulty">2/5</span>
+            </span>
           </div>
         </div>
       </div>
-
-      <div class="col">
+      <!--Ankh-->
+      <div class="col" id="ankh">
         <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-              dy=".3em">Thumbnail</text>
-          </svg>
+          <img src="./Pictures/Suggested/ankh.jpg" class="rounded-top" width="100%" height="225">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
+            <p class="card-text">Vesti i panni di un dio dell'antico Egitto, in competizione per sopravvivere quando la
+              società inizia a dimenticare le vecchie usanze.
+              Costrusci carovane, evoca mostri e converti i tuoi seguaci nel tentativo di ottenere la supremazia in
+              Ankh: Gods of Egypt. </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">5</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">90</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('ankh');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-three"></i><span class="difficulty">3/5</span>
+            </span>
           </div>
         </div>
       </div>
-      <div class="col">
+      <!--Kingdomino-->
+      <div class="col" id="kingdomino">
         <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-              dy=".3em">Thumbnail</text>
-          </svg>
+          <img src="./Pictures/Suggested/kingdomino.jpg" class="rounded-top" width="100%" height="225">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
+            <p class="card-text">Sei un signore desideroso di espandere il proprio Reame, esplori tutti i territori,
+              campi di grano, laghi e montagne per trovare gli appezzamenti migliori e dotati di corone. È comunque una
+              sfida con gli altri Signori che bramano di possedere gli stessi Reami.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">30</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('kingdomino');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-one"></i><span class="difficulty">1/5</span>
+            </span>
           </div>
         </div>
       </div>
-      <div class="col">
+      <!--King of tokyo-->
+      <div class="col" id="kingoftokyo">
         <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-              dy=".3em">Thumbnail</text>
-          </svg>
+          <img src="./Pictures/Suggested/kingoftokyo.jpg" class="rounded-top" width="100%" height="225">
           <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
+            <p class="card-text">In questo gioco, i giocatori assumono il ruolo di un Kaiju giapponese efaranno del loro
+              meglio per distruggere la città di Tokyo
+              e tutto ciò che incontrano sul loro cammino, compresi gli altri giocatori.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">6</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">30</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('kingoftokyo');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-one"></i><span class="difficulty">1/5</span>
+            </span>
           </div>
         </div>
       </div>
-
+      <!--Imagine-->
+      <div class="col" id="imagine">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/imagine.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Più di mille oggetti di ogni genere possono essere indovinati attraverso l'uso di 61
+              carte trasparenti in Imagine,
+              sia che siano posizionate una accanto all'altra sia che siano sovrapposte.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">3</span>-<span
+                class="max-player-count">8</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">30</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('imagine');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-handshake"></i><span class="players-interaction">Coop</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-one"></i><span class="difficulty">1/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Last Bastion-->
+      <div class="col" id="lastbastion">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/lastbastion.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Last Bastion è un gioco cooperativo in cui i giocatori assumono il ruolo di eroi che
+              difendono un Bastione ancestrale contro orde di mostri.
+              I giocatori lottano insieme contro il gioco: o vincono tutti, o subiscono tutti la sconfitta.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">1</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">45</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('lastbastion');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-handshake"></i><span class="players-interaction">Coop</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-three"></i><span class="difficulty">3/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Villainous-->
+      <div class="col" id="villainous">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/villainous.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Diventa un cattivo Disney e sfrutta i tuoi malefici poteri per sconfiggere i tuoi
+              avversari!
+              Scopri come raggiungere l'obiettivo personale del tuo Cattivo, ogni personaggio si muove all'interno del
+              proprio regno, ecco perchè ogni sfida è differente!
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">8</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">120</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('villainous');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-three"></i><span class="difficulty">3/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--JOTL-->
+      <div class="col" id="jotl">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/jotl.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Gloomhaven è un gioco di combattimento tattico di ispirazione europea in un mondo dai
+              dubbi ideali.
+              I giocatori assumeranno il ruolo di un avventuriero errante con le proprie abilità speciali e le proprie
+              ragioni per viaggiare in questo angolo oscuro del mondo.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">1</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">120</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('jotl');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-handshake"></i><span class="players-interaction">Coop</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-four"></i><span class="difficulty">4/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Santorini-->
+      <div class="col" id="santorini">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/santorini.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Un gioco scacchistico dalle regole semplici dove i giocatori si sfidano a scalare la
+              torre più alta.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">20</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('santorini');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-two"></i><span class="difficulty">2/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Oceani-->
+      <div class="col" id="oceani">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/oceani.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text"> Un gioco basato sull'evoluzione delle specie marine. Adattamento ed estinzione sono le
+              parole chiave: mantieni in vita le tue specie e fanne
+              prosperare di nuove per garantirti la vittoria - e la sopravvivenza!
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">5</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">90</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('oceani');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-three"></i><span class="difficulty">3/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Paleo-->
+      <div class="col" id="paleo">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/paleo.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Paleo è un gioco d'avventura cooperativo ambientato nell'età della pietra, in cui i
+              giocatori cercano di mantenere in vita gli esseri umani
+              a loro affidati completando le missioni, ma soprattutto collaborando per lasciare traccia della propria
+              esistenza.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">1</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">60</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('paleo');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-handshake"></i><span class="players-interaction">Coop</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-three"></i><span class="difficulty">3/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Tsuro-->
+      <div class="col" id="tsuro">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/tsuro.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Un gioco semplicissimo che consiste nel posare una tessera prima della propria pedina
+              per farle continuare il suo percorso a ogni turno. L'obiettivo è restare sul tabellone più a lungo
+              di quella degli altri, ma man mano che il tabellone si riempie questo diventa più difficile.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">8</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">20</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('tsuro');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-one"></i><span class="difficulty">1/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Challengers-->
+      <div class="col" id="challengers">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/challengers.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Un esuberante "cattura la bandiera". Ogni giocatore costruisce man mano il suo mazzo di
+              carte che rappresenta i suoi atleti
+              e sfida gli altri giocatori in un torneo fino ad 8 giocatori.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">1</span>-<span
+                class="max-player-count">8</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">45</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('challengers');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-two"></i><span class="difficulty">2/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Welcome to the Dungeon-->
+      <div class="col" id="welcomedungeon">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/welcomedungeon.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Dei signori del male si divertono a scommettere sulle sorti del prossimo avventuriero
+              che si addentrerà nel dungeon.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">20</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('welcomedungeon');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-one"></i><span class="difficulty">1/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Unstable unicorns-->
+      <div class="col" id="unstableunicorns">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/unstableunicorns.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Arruola un esercito di unicorni. Tradisci i tuoi amici. Gli unicorni sono i tuoi amici
+              adesso.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">8</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">45</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('unstableunicorns');" data-bs-toggle="modal"
+                data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-one"></i><span class="difficulty">1/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Origami-->
+      <div class="col" id="origami">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/origami.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text"> I più grandi esperti di origami si sfidano faccia a faccia per il titolo, usando la
+              magia per dar vita alle loro creazioni.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">30</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('origami');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-one"></i><span class="difficulty">1/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Exploding Kittens-->
+      <div class="col" id="explodingkittens">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/explodingkittens.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text"> Una "gattosa" roulette russa. I giocatori si alterano nel pescare carte finchè non
+              esplodono. Ma niente paura!
+              Ci sono un sacco di metodi per (cercare) di evitare il pericolo!
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">6</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">15</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('explodingkittens');" data-bs-toggle="modal"
+                data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-one"></i><span class="difficulty">1/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Sherlock Holmes-->
+      <div class="col" id="sherlockholmes">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/sherlockholmes.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Un gioco cooperativo in cui i giocatori cercano di risolvere casi misteriosi camminando
+              per le nebbiose strade di Londra alla ricerca di indizi.
+              Svelate il filo dell'intrigo, rispondete a una serie di domande e confrontate le vostre abilità di
+              detective con quelle del maestro Sherlock Holmes.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">1</span>-<span
+                class="max-player-count">8</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">120</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('sherlockholmes');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-handshake"></i><span class="players-interaction">Coop</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-two"></i><span class="difficulty">2/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Ishtar-->
+      <div class="col" id="ishtar">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/ishtar.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text"> Ishtar è un gioco in cui si interpreta il ruolo di un giardiniere che vuole
+              trasformare l'arido deserto nei Giardini Pensili perduti di Babilonia.
+              Per compiere la vostra missione, dovrete piantare fiori che, se ben posizionati, vi aiuteranno a
+              raccogliere gemme preziose e ad attivare azioni.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">45</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('ishtar');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-two"></i><span class="difficulty">2/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Black Rose Wars-->
+      <div class="col" id="blackrosewars">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/blackrosewars.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Black Rose Wars è un gioco fantasy competitivo di deck-building, strategia e
+              combattimento.
+              Ogni giocatore è uno dei potenti maghi dell'Ordine della Rosa Nera che aspira a diventare il nuovo
+              Magister Supremo per acquisire il potente potere dell'Artefatto della Rosa Nera e della Magia Dimenticata.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">120</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('blackrosewars');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-four"></i><span class="difficulty">4/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Unlock-->
+      <div class="col" id="unlock">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/unlock.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Unlock! è un gioco di carte cooperativo ispirato alle escape room che utilizza un
+              sistema semplice che consente di cercare nelle scene,
+              combinare oggetti e risolvere enigmi.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">6</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">90</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('unlock');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-handshake"></i><span class="players-interaction">Coop</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-two"></i><span class="difficulty">2/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Alchimisti-->
+      <div class="col" id="alchimisti">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/alchimisti.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">In Alchimisti, da due a quattro alchimisti in erba competono per scoprire i segreti
+              della loro arte mistica.
+              I punti possono essere guadagnati in vari modi, ma la maggior parte di essi viene guadagnata pubblicando
+              teorie, cioè teorie corrette, e qui sta il problema.</p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">120</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('alchimisti');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-four"></i><span class="difficulty">4/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Takenoko-->
+      <div class="col" id="takenoko">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/takenoko.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Molto tempo fa, alla corte imperiale giapponese, l'imperatore cinese offrì un panda gigante come simbolo di pace all'imperatore giapponese. 
+              Da allora, l'imperatore giapponese ha affidato ai suoi membri di corte (i giocatori) il difficile compito di prendersi cura dell'animale curando il suo giardino di bambù.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">45</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('takenoko');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-two"></i><span class="difficulty">2/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Dixit-->
+      <div class="col" id="dixit">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/dixit.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">A ogni turno di Dixit, un giocatore è il narratore, sceglie una delle sei carte in
+              mano, quindi inventa una frase basata sull'immagine
+              di quella carta e la pronuncia ad alta voce senza mostrarla agli altri giocatori.
+              Ogni altro giocatore sceglie quindi la carta in mano che meglio corrisponde alla frase e la dà al
+              narratore, senza mostrarla a nessun altro.</p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">3</span>-<span
+                class="max-player-count">12</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">30</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('dixit');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-one"></i><span class="difficulty">1/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Solenia-->
+      <div class="col" id="solenia">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/solenia.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">Diversi millenni fa, il piccolo pianeta Solenia ha perso il ciclo giorno-notte. 
+              La vostra missione consiste nel portare avanti l'onorevole compito dei vostri antenati di viaggiare per il mondo per consegnare beni 
+              essenziali agli abitanti di entrambi gli emisferi. 
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">1</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">45</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('solenia');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-two"></i><span class="difficulty">2/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+       <!--Ashes-->
+       <div class="col" id="ashes">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/ashes.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">In Ashes: Rise of the Phoenixborn, un gioco di carte espandibile per due giocatori, i giocatori assumono il ruolo di Phoenixborn,
+               semidei e protettori di questo mondo.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">120</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('ashes');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-three"></i><span class="difficulty">3/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
-  
+
   <div class="modal fade" id="picturesModal" tabindex="-1" aria-labelledby="picturesModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="picturesModalLabel">Bitoku</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+
         <div class="modal-body">
           <div id="carouselPhotoFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://cf.geekdo-images.com/oY1njYxmVFvf9jh5KppGGA__imagepage/img/3dGkyfnyZDlarkqyKWhFQzSKp9w=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6443304.jpg" width="100%" height="100%">
+                <img src="" class="pictureModal">
               </div>
               <div class="carousel-item">
-                <img src="https://cf.geekdo-images.com/3eKVOHbAWNCGYIFb3BPmDQ__imagepage/img/Tg-dYzok1s8jpnI3HajOCneTO9o=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6443306.jpg" width="100%" height="100%" alt="...">
+                <img src="" class="pictureModal ">
               </div>
               <div class="carousel-item">
-                <img src="https://cf.geekdo-images.com/KjT1hia7BUo5hhV_e4Bkjw__imagepage/img/dFmhIZpEDBfGdaRVMtIqARjkgLY=/fit-in/900x600/filters:no_upscale():strip_icc()/pic7101753.jpg" width="100%" height="100%" alt="...">
+                <img src="" class="pictureModal">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhotoFade" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhotoFade"
+              data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselPhotoFade" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPhotoFade"
+              data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -515,5 +1431,6 @@
   </div>
 
 </body>
+<script src="./scripts.js"></script>
 
 </html>
