@@ -164,8 +164,8 @@
     </ul>
   </div>
 
-  <a class="btn btn-primary btn-primary open-menu" role="button" data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+  <a class="btn btn-primary open-menu" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+    aria-controls="offcanvasMenu">
     <i class="fa-solid fa-bars"></i> <span>Menu</span>
   </a>
 
@@ -185,36 +185,49 @@
           </button>
         </li>
         <li class="list-group-item border border-0">
-          <button type="button" id="categoriesButton" class="btn" href="#categoriesMenu" data-bs-toggle="collapse"
-            aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="categoriesMenu">
-            <i class="fa-solid fa-tags"></i> <span>Categorie </span>
-          </button>
-          <ul class="collapse list-group" id="categoriesMenu">
-            <li class="list-group-item border border-0">
-              <div class="form-check">
-                <input class="form-check-input ms-1" type="checkbox" value="" id="competitiveCheck">
-                <label class="form-check-label ps-2" for="competitiveCheck">
-                  Competitivi
-                </label>
-              </div>
-            </li>
-            <li class="list-group-item border border-0">
-              <div class="form-check">
-                <input class="form-check-input ms-1" type="checkbox" value="" id="cooperativeCheck">
-                <label class="form-check-label ps-2" for="cooperativeCheck">
-                  Cooperativi
-                </label>
-              </div>
-            </li>
-            <li class="list-group-item border border-0">
-              <div class="form-check">
-                <input class="form-check-input ms-1" type="checkbox" value="" id="cooperativeCheck">
-                <label class="form-check-label ps-2" for="cooperativeCheck">
-                  Cooperativi
-                </label>
-              </div>
-            </li>
-          </ul>
+          <div class="navBarSection">
+            <p class="navBarSectionLabel"> Interazione Giocatori</p>
+            <select id="interactionSelect" class="form-select form-select-sm" aria-label="Small select example" onchange="filter()">
+              <option value="Both" selected>Entrambe</option>
+              <option value="Coop">Coop</option>
+              <option value="Versus">Versus</option>
+            </select>
+          </div>
+        </li>
+        <li class="list-group-item border border-0">
+          <div class="navBarSection">
+            <p class="navBarSectionLabel"> Difficoltà</p>
+            <div class="form-check">
+              <input class="form-check-input checkDifficulty" type="checkbox" value="1/5" id="checkOne" onchange="filter()" checked>
+              <label class="form-check-label" for="checkOne">
+                <i class="fa-solid fa-dice-one"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input checkDifficulty" type="checkbox" value="2/5" id="checkTwo" onchange="filter()"checked>
+              <label class="form-check-label" for="checkTwo">
+                <i class="fa-solid fa-dice-two"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input checkDifficulty" type="checkbox" value="3/5" id="checkThree" onchange="filter()"checked>
+              <label class="form-check-label" for="checkThree">
+                <i class="fa-solid fa-dice-three"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input checkDifficulty" type="checkbox" value="4/5" id="checkFour" onchange="filter()"checked>
+              <label class="form-check-label" for="checkFour">
+                <i class="fa-solid fa-dice-four"></i>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input checkDifficulty" type="checkbox" value="5/5" id="checkFive" onchange="filter()" checked>
+              <label class="form-check-label" for="checkFive">
+                <i class="fa-solid fa-dice-five"></i>
+              </label>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -273,7 +286,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+  
   <div class="container-fluid">
     <div
       class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4 g-3 d-flex align-items-stretch ms-xxl-5 me-xxl-5"
@@ -1375,6 +1388,120 @@
             </span>
             <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
               <a href="#" onclick="editModal('ashes');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-three"></i><span class="difficulty">3/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Azul-->
+      <div class="col" id="azul">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/azul.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">In azul i giocatori raccolgono ogni turno tessere dai dispenser al centro del tavolo e
+              devono piazzarle
+              al meglio che possono per decorare il loro palazzo.
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">45</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('azul');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-two"></i><span class="difficulty">2/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Quetzal-->
+      <div class="col" id="quetzal">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/quetzal.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">È stata appena scoperta Quetzal, la città degli uccelli sacri. Avete cinque giorni per
+              esplorare il sito e raccogliere gli oggetti più belli che vi sono sepolti.
+              Sarete in grado di gestire la squadra che vi è stata affidata quotidianamente per ottimizzare gli scavi?
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">5</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">75</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('quetzal');" data-bs-toggle="modal" data-bs-target="#picturesModal"
+                class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
+              </a>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-people-arrows"></i><span class="players-interaction">Versus</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-dice-two"></i><span class="difficulty">2/5</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!--Seasons-->
+      <div class="col" id="seasons">
+        <div class="card shadow-sm">
+          <img src="./Pictures/Suggested/seasons.jpg" class="rounded-top" width="100%" height="225">
+          <div class="card-body">
+            <p class="card-text">I più grandi stregoni del regno si sono riuniti nel cuore della foresta di Argos, dove
+              si sta svolgendo il leggendario torneo delle 12 stagioni.
+              Alla fine dei tre anni di competizione, il nuovo arcimago del regno di Xidit sarà scelto tra i
+              concorrenti.
+              Equipaggia i tuoi oggetti magici ancestrali, chiama al tuo fianco i tuoi familiari più fedeli e preparati
+              ad affrontare la sfida!
+            </p>
+          </div>
+          <div class="card-footer d-flex gap-1 justify-content-center m-0 p-2 ">
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-users"></i><span class="min-player-count">2</span>-<span
+                class="max-player-count">4</span>
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill"
+              style="min-width: 0;">
+              <i class="fa-solid fa-clock"></i><span class="playing-time">60</span>'
+            </span>
+            <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary-emphasis rounded-pill">
+              <a href="#" onclick="editModal('seasons');" data-bs-toggle="modal" data-bs-target="#picturesModal"
                 class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
                 <i class="fa-solid fa-image"></i><span class="photos">Immagini</span>
               </a>
